@@ -29,3 +29,4 @@ or go to https://generator-hasel.pl
 
 ### 🔑 Main Interface
 ![Password Generator](https://raw.githubusercontent.com/przylucki/password-generator/main/Screenshot_20250210_233717.png)
+
