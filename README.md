@@ -24,3 +24,8 @@ You can use this project directly by cloning the repository:
 git clone https://github.com/your-username/password-generator.git
 cd password-generator
 or go to https://generator-hasel.pl
+
+## 📷 Screenshots
+
+### 🔑 Main Interface
+![Password Generator](https://raw.githubusercontent.com/przylucki/password-generator/main/Screenshot_20250210_233717.png)
