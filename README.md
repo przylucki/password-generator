@@ -23,7 +23,6 @@ Check out the live demo: [**Password Generator**](https://generator-hasel.pl)
 You can use this project directly by cloning the repository:
 
 ```bash
-git clone https://github.com/your-username/password-generator.git
+git clone https://github.com/przylucki/password-generator.git
 cd password-generator
-or go to https://generator-hasel.pl
 
