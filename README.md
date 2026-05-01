@@ -16,7 +16,7 @@ A simple and efficient password generator built with **HTML, CSS (Bootstrap), an
 
 ## 🎥 Demo
 
-Check out the live demo: [**Password Generator**](https://generator-hasel.pl) 
+Check out the live demo: [**Password Generator**](https://przylucki.github.io/password-generator/) 
 
 ## 🛠️ Installation
 
