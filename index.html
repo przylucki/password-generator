@@ -104,7 +104,7 @@
 
     <script>
       function generatePassword() {
-        const length = document.getElementById("length").value;
+  const length = parseInt(document.getElementById("length").value, 10);
         const useUppercase = document.getElementById("uppercase").checked;
         const useNumbers = document.getElementById("numbers").checked;
         const useSymbols = document.getElementById("symbols").checked;
@@ -121,8 +121,8 @@
 
         let password = "";
         for (let i = 0; i < length; i++) {
-          const randomIndex = Math.floor(Math.random() * availableChars.length);
-          password += availableChars[randomIndex];
+         const randomIndex = getSecureRandomInt(availableChars.length);
+password += availableChars[randomIndex];
         }
 
         document.getElementById("password").value = password;
@@ -172,9 +172,24 @@
       document
         .getElementById("numbers")
         .addEventListener("change", generatePassword);
-      document
-        .getElementById("symbols")
-        .addEventListener("change", generatePassword);
+ document
+  .getElementById("symbols")
+  .addEventListener("change", generatePassword);
+
+function getSecureRandomInt(max) {
+  const array = new Uint32Array(1);
+  const maxUint32 = 0xffffffff;
+  const limit = maxUint32 - (maxUint32 % max);
+
+  let rand;
+
+  do {
+    window.crypto.getRandomValues(array);
+    rand = array[0];
+  } while (rand >= limit);
+
+  return rand % max;
+}
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
